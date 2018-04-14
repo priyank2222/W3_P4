@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <TextView
+        android:id="@+id/ran1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnRestart"
+        android:layout_alignBottom="@+id/btnRestart"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ran2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ran1"
+        android:layout_below="@+id/btnRestart"
+        android:layout_marginTop="13dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSub2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Generate 10 Random Problems" />
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSub2"
+        android:layout_alignBottom="@+id/btnSub2"
+        android:layout_marginEnd="45dp"
+        android:layout_toStartOf="@+id/txtGenerate"
+        android:text="Your Answer:" />
+
+    <Button
+        android:id="@+id/btnSub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtInput"
+        android:layout_alignBottom="@+id/txtInput"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/txtInput"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ran2"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="12dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtAns"
+        android:layout_alignTop="@+id/ran2"
+        android:text="÷" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart" />
+</RelativeLayout>
